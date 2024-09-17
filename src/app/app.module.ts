@@ -8,6 +8,10 @@ import {MatButtonModule} from '@angular/material/button';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NabVarComponent } from './shared/nab-var/nab-var.component';
+import { SideVarComponent } from './shared/side-var/side-var.component';
+import { CarouselComponent } from './layout/banner/banner.component';
+import { CardComponent } from './shared/card/card.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 @NgModule({
@@ -16,6 +20,10 @@ import { NabVarComponent } from './shared/nab-var/nab-var.component';
     LoginComponent,
     HomeComponent,
     NabVarComponent,
+    SideVarComponent,
+    CarouselComponent,
+    CardComponent,
+    FooterComponent,
     
   ],
   imports: [

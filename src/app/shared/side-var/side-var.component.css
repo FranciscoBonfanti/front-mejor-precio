@@ -1,0 +1,22 @@
+.contenedor-aside{
+    background-color:#1d1d1d;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 2px solid #f0c040;
+    border-bottom: 2px solid #f0c040;
+}
+
+a {
+    padding: 8px 20px;
+    background-color: #1d1d1d;
+    color: #fff;
+    /* border: 2px solid #f0c040; */
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #f0c040;
+}

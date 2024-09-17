@@ -1,30 +1,25 @@
-/* :root {
-  --color-principal: #F9DC5C;
-  --color-secundario: #011936;
-  --color-terciario: #F4FFFD;
-  --color-cuarto: #465362;
-} */
-
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #F4FFFD;
+  background-color: #1d1d1d; /* Color de fondo similar al del navbar */
 }
 
 .login-box {
-  background-color: #F9DC5C;
+  background-color: #FFD700; /* Color amarillo similar */
   border-radius: 15px;
   padding: 40px;
   width: 300px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 .logo img {
   width: 100px;
   margin-bottom: 20px;
+  border-radius: 50%;
 }
 
 form {
@@ -49,11 +44,11 @@ a.recuperar {
   font-size: 14px;
   margin-bottom: 15px;
   display: block;
-  color: #0056b3;
+  color: #0056b3; /* Azul similar al del dropdown */
 }
 
 .btn-login {
-  background-color: #465362;
+  background-color: #2E4053; /* Amarillo consistente con el navbar */
   color: white;
   padding: 10px;
   border: none;
@@ -62,7 +57,7 @@ a.recuperar {
 }
 
 .btn-login:hover {
-  background-color: #0056b3;
+  background-color: #2E4033; /* Un amarillo más claro */
 }
 
 .register {
@@ -72,6 +67,6 @@ a.recuperar {
 
 .register a {
   text-decoration: none;
-  color: #465362;
+  color: #007bff; /* Azul más oscuro para el enlace */
   font-size: 14px;
 }
