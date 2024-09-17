@@ -1,0 +1,77 @@
+/* :root {
+  --color-principal: #F9DC5C;
+  --color-secundario: #011936;
+  --color-terciario: #F4FFFD;
+  --color-cuarto: #465362;
+} */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F4FFFD;
+}
+
+.login-box {
+  background-color: #F9DC5C;
+  border-radius: 15px;
+  padding: 40px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+a.recuperar {
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: block;
+  color: #0056b3;
+}
+
+.btn-login {
+  background-color: #465362;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #0056b3;
+}
+
+.register {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.register a {
+  text-decoration: none;
+  color: #465362;
+  font-size: 14px;
+}
