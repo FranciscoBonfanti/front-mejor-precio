@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nab-var',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./nab-var.component.css']
 })
 export class NabVarComponent {
+  constructor(private router: Router){}
 
+  loginn(){
+    this.router.navigate(['/login']);
+  }
 }

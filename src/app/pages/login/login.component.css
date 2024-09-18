@@ -3,11 +3,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1d1d1d; /* Color de fondo similar al del navbar */
+  background-color: #1d1d1d; 
 }
 
 .login-box {
-  background-color: #FFD700; /* Color amarillo similar */
+  background-color: #FFD700;
   border-radius: 15px;
   padding: 40px;
   width: 300px;
@@ -17,8 +17,7 @@
 }
 
 .logo img {
-  width: 100px;
-  margin-bottom: 20px;
+  width: 200px;
   border-radius: 50%;
 }
 

@@ -11,7 +11,8 @@ export class CardComponent implements OnInit {
     { title: 'Zapatillas', imageUrl: '../../../assets/zapatillas.png' },
     { title: 'Alimentos', imageUrl: '../../../assets/alimentos.png' },
     { title: 'Electrónica', imageUrl: '../../../assets/electronica.png' },
-    { title: 'Perfumes', imageUrl: '../../../assets/perfumes.png' }
+    { title: 'Perfumes', imageUrl: '../../../assets/perfumes.png' },
+    { title: 'Joyeria', imageUrl: '../../../assets/joyeria.png' }
   ];
 
   constructor() { }

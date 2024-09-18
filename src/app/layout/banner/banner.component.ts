@@ -7,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
   bannerImages: string[] = [
-    '../../../assets/mejor.png',
     '../../../assets/banner3.webp',
     '../../../assets/banner1.webp',
-    '../../../assets/banner2.webp'
+    '../../../assets/banner2.webp',
   ];
 
   currentIndex: number = 0;
@@ -25,7 +24,7 @@ export class CarouselComponent implements OnInit {
   startCarousel() {
     this.intervalId = setInterval(() => {
       this.next();
-    }, 3000); // Cambia la imagen cada 3 segundos
+    }, 3000); 
   }
 
   next() {
@@ -34,7 +33,7 @@ export class CarouselComponent implements OnInit {
 
   ngOnDestroy(): void {
     if (this.intervalId) {
-      clearInterval(this.intervalId); // Limpia el intervalo cuando se destruye el componente
+      clearInterval(this.intervalId);
     }
   }
 }

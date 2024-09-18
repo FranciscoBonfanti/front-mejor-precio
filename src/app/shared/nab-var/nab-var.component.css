@@ -7,17 +7,18 @@
 }
 
 .img-nav {
-    width: 150px;
+    width: 200px;
 }
 
-a {
+button {
     font-size: 16px;
-    text-decoration: none;
     color: #fff;
     margin: 0 5px;
+    background-color: #1d1d1d;
+    border: none;
 }
 
-a:hover {
+button:hover {
     color: #f0c040;
 }
 
