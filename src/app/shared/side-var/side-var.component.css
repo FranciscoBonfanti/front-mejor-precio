@@ -68,4 +68,12 @@ button{
     background-color: transparent;
     color: white;
     border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #f0c040;
 }

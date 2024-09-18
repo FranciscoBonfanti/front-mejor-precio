@@ -12,6 +12,8 @@ import { SideVarComponent } from './shared/side-var/side-var.component';
 import { CarouselComponent } from './layout/banner/banner.component';
 import { CardComponent } from './shared/card/card.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { AllProductsComponent } from './pages/all-products/all-products.component';
+import { AllComerciosComponent } from './layout/all-comercios/all-comercios.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     CarouselComponent,
     CardComponent,
     FooterComponent,
+    AllProductsComponent,
+    AllComerciosComponent,
     
   ],
   imports: [

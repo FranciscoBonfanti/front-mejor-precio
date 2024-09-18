@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';  // Importa el Router
 
 @Component({
   selector: 'app-card',
@@ -6,18 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-
   cards = [
     { title: 'Zapatillas', imageUrl: '../../../assets/zapatillas.png' },
     { title: 'Alimentos', imageUrl: '../../../assets/alimentos.png' },
     { title: 'Electrónica', imageUrl: '../../../assets/electronica.png' },
     { title: 'Perfumes', imageUrl: '../../../assets/perfumes.png' },
-    { title: 'Joyeria', imageUrl: '../../../assets/joyeria.png' }
+    { title: 'Joyería', imageUrl: '../../../assets/joyeria.png' }
   ];
 
-  constructor() { }
+  constructor(private router: Router) {} 
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  goToAllProducts() {
+    this.router.navigate(['/allProducts']); 
   }
 }
-
