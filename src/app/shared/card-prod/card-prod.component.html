@@ -1,0 +1,11 @@
+<div class="card-container">
+    <div *ngFor="let product of products" class="card">
+        <img src="../../../assets/zapatillas.png" alt="">
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <p>Precio: {{ product.price | currency }}</p>
+      <p>Stock: {{ product.stock > 0 ? 'Disponible' : 'Agotado' }}</p>
+      <button [disabled]="product.stock === 0" class="btn-buy">Comprar</button>
+    </div>
+  </div>
+  

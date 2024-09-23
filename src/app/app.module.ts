@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { CardComponent } from './shared/card/card.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { AllProductsComponent } from './pages/all-products/all-products.component';
 import { AllComerciosComponent } from './layout/all-comercios/all-comercios.component';
+import { CardProdComponent } from './shared/card-prod/card-prod.component';
 
 
 @NgModule({
@@ -28,6 +30,7 @@ import { AllComerciosComponent } from './layout/all-comercios/all-comercios.comp
     FooterComponent,
     AllProductsComponent,
     AllComerciosComponent,
+    CardProdComponent,
     
   ],
   imports: [
@@ -35,6 +38,7 @@ import { AllComerciosComponent } from './layout/all-comercios/all-comercios.comp
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

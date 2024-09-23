@@ -1,0 +1,32 @@
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  .card {
+    background-color: #f4f4f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-buy {
+    background-color: #1d1d1d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-buy:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
