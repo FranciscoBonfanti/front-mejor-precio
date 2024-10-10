@@ -1,7 +1,5 @@
 <div class="card-container">
-  <div class="card" *ngFor="let card of cards" [style.backgroundImage]="'url(' + card.imageUrl + ')'" (click)="goToAllProducts()">
+  <div class="card" *ngFor="let card of cards" [style.backgroundImage]="'url(' + card.imageUrl + ')'" (click)="card.action()">
     <h2>{{ card.title }}</h2>
   </div>
 </div>
-
-  

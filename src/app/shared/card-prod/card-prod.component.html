@@ -1,11 +1,23 @@
 <div class="card-container">
-    <div *ngFor="let product of products" class="card">
-        <img src="../../../assets/zapatillas.png" alt="">
-      <h3>{{ product.name }}</h3>
-      <p>{{ product.description }}</p>
-      <p>Precio: {{ product.price | currency }}</p>
-      <p>Stock: {{ product.stock > 0 ? 'Disponible' : 'Agotado' }}</p>
-      <button [disabled]="product.stock === 0" class="btn-buy">Comprar</button>
-    </div>
+  <div *ngFor="let product of products" class="card">
+    <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image">
+    
+    <h3>{{ product.name }}</h3>
+
+    <p>{{ product.description }}</p>
+
+    <p class="price">Precio: {{ product.price | currency }}</p>
+
+    <p class="stock">Stock: <span [ngClass]="{'available': product.stock > 0, 'out-of-stock': product.stock === 0}">
+      {{ product.stock > 0 ? 'Disponible' : 'Agotado' }}</span>
+    </p>
+
+    <button [disabled]="product.stock === 0" class="btn-buy" (click)="openPopup(product)">Comprar</button>
   </div>
-  
+</div>
+
+<app-popup-prod 
+  [product]="selectedProduct" 
+  (closePopup)="closePopup()" 
+  (confirmPurchase)="confirmPurchase()">
+</app-popup-prod>

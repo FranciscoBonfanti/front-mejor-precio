@@ -16,6 +16,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { AllProductsComponent } from './pages/all-products/all-products.component';
 import { AllComerciosComponent } from './layout/all-comercios/all-comercios.component';
 import { CardProdComponent } from './shared/card-prod/card-prod.component';
+import { PopupProdComponent } from './layout/popup-prod/popup-prod.component';
+import { CarritoComponent } from './pages/carrito/carrito.component';
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { CardProdComponent } from './shared/card-prod/card-prod.component';
     AllProductsComponent,
     AllComerciosComponent,
     CardProdComponent,
-    
+    PopupProdComponent,
+    CarritoComponent    
   ],
   imports: [
     BrowserModule,

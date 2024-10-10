@@ -1,0 +1,36 @@
+  <!-- Contenedor del Popup Modal -->
+  <div class="popup-overlay" *ngIf="product">
+      <div class="popup-container">
+        
+        <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image" />
+        
+        <div class="desc-container">
+          <h3>{{ product.name }}</h3>
+          <p>Descripción: {{ product.description }}</p>
+    
+          <p class="price">{{ product.price | currency }}</p>
+          <p class="old-price">$4.210.769</p>
+          <p class="installments">¡12 cuotas sin interés!</p>
+    
+          <span class="stock-label">En stock</span>
+    
+          <div class="icon-container">
+            <div class="icon-item">
+              <i class="fas fa-question-circle"></i> Hacer pregunta sobre este artículo
+            </div>
+            <div class="icon-item">
+              <i class="fas fa-truck"></i> Envío GRATIS
+            </div>
+            <div class="icon-item">
+              <i class="fas fa-shield-alt"></i> Garantía oficial 36 meses
+            </div>
+          </div>
+    
+          <!-- Botones de Confirmar y Cancelar -->
+          <button class="btn-confirm" (click)="onConfirmPurchase()">COMPRAR AHORA</button>
+          <button class="btn-cancel" (click)="onClosePopup()">CANCELAR</button>
+        </div>
+        
+      </div>
+    </div>
+    

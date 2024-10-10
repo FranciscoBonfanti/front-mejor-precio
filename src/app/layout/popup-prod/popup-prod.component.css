@@ -1,0 +1,138 @@
+/* Estilo general para el contenedor del popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+}
+
+.popup-container {
+  background-color: white;
+  width: 70%;
+  max-width: 1000px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Estilo para la imagen del producto */
+.product-image {
+  width: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Contenedor de descripción */
+.desc-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+/* Estilo del título */
+.desc-container h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos de texto y descripción */
+.desc-container p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.desc-container p strong {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Precio especial */
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #009688;
+  margin-top: 10px;
+}
+
+.old-price {
+  font-size: 18px;
+  color: #757575;
+  text-decoration: line-through;
+}
+
+.installments {
+  color: #ffb74d;
+  font-size: 18px;
+}
+
+/* Estilo para los botones */
+.btn-confirm, .btn-cancel {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-confirm {
+  background-color: #1976d2;
+  color: white;
+}
+
+.btn-cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-confirm:hover {
+  background-color: #1565c0;
+}
+
+.btn-cancel:hover {
+  background-color: #e53935;
+}
+
+/* Estilos adicionales para simular los íconos y etiquetas */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.icon-item i {
+  font-size: 20px;
+  color: #4caf50;
+}
+
+.stock-label {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
+}
