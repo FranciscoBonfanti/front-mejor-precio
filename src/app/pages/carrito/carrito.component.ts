@@ -32,8 +32,9 @@ export class CarritoComponent {
 
   ngOnInit(): void {
     if (history.state.product) {
-      this.product.push(history.state.product); 
+      this.addToCart(history.state.product); 
     }
   }
+  
 
 }

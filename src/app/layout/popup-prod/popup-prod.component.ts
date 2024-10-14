@@ -15,8 +15,8 @@ export class PopupProdComponent {
 
   onConfirmPurchase() {
     this.confirmPurchase.emit();
-    this.router.navigate(['/carrito'], { state: { product: this.product } }); 
-  }
+    this.router.navigate(['/carrito'], { state: { product: this.product } });
+  }  
 
   onClosePopup() {
     this.closePopup.emit(); 

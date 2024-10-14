@@ -10,6 +10,11 @@ export class SideVarComponent {
   constructor(private router: Router) {}
 
   goToHome() {
-    this.router.navigate(['/home']);
+    this.router.navigate(['home']);
   }
+
+  envioCarrito(){
+    this.router.navigate(['/envioCarrito'])
+  }
+
 }
