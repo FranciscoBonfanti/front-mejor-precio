@@ -1,22 +1,21 @@
+<app-nab-var></app-nab-var>
+<app-side-var></app-side-var>
+
 <div class="cart-container">
-    <h2>Carrito de Compras</h2>
-    
-    <div *ngFor="let item of cartItems" class="cart-item">
-      <img [src]="item.imageUrl" alt="{{ item.name }}" class="cart-item-image">
-      
-      <div class="item-details">
-        <h3>{{ item.name }}</h3>
-        <p>Descripción: {{ item.description }}</p>
-        <p class="price">Precio: {{ item.price | currency }}</p>
-        <p>Cantidad: {{ item.quantity }}</p>
-      </div>
-  
-      <button class="btn-remove" (click)="removeFromCart(item)">Eliminar</button>
+  <h2>Carrito de Compras</h2>
+  <div *ngFor="let item of cartItems" class="cart-item">
+    <img [src]="item.imageUrl" alt="{{ item.name }}" class="cart-item-image">
+    <div class="item-details">
+      <h3>{{ item.name }}</h3>
+      <p class="price">Precio: {{ item.price | currency }}</p>
+      <p>Cantidad: {{ item.quantity }}</p>
     </div>
-    
-    <div class="cart-summary">
-      <p>Total: {{ totalPrice() | currency }}</p>
-      <button class="btn-checkout" (click)="checkout()">Proceder al Pago</button>
-    </div>
+    <button class="btn-remove" (click)="removeFromCart(item)">Eliminar</button>
   </div>
-  
+  <div class="cart-summary">
+    <p>Total: {{ totalPrice() | currency }}</p>
+    <button class="btn-checkout" (click)="checkout()">Proceder al Pago</button>
+  </div>
+</div>
+
+<app-footer></app-footer>

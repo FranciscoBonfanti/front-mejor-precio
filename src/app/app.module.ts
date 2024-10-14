@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog'; 
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +23,7 @@ import { AllComerciosComponent } from './layout/all-comercios/all-comercios.comp
 import { CardProdComponent } from './shared/card-prod/card-prod.component';
 import { PopupProdComponent } from './layout/popup-prod/popup-prod.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
+import { AddProductDialogComponent } from './layout/add-product-dialog/add-product-dialog.component';
 
 
 @NgModule({
@@ -34,7 +40,8 @@ import { CarritoComponent } from './pages/carrito/carrito.component';
     AllComerciosComponent,
     CardProdComponent,
     PopupProdComponent,
-    CarritoComponent    
+    CarritoComponent,
+    AddProductDialogComponent    
   ],
   imports: [
     BrowserModule,
@@ -42,6 +49,11 @@ import { CarritoComponent } from './pages/carrito/carrito.component';
     BrowserAnimationsModule,
     MatButtonModule,
     HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule, 
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

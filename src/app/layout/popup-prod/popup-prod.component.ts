@@ -7,6 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./popup-prod.component.css']
 })
 export class PopupProdComponent {
+openAddProductDialog(arg0: any) {
+throw new Error('Method not implemented.');
+}
   @Input() product: any = null; 
   @Output() closePopup = new EventEmitter<void>(); 
   @Output() confirmPurchase = new EventEmitter<void>(); 
