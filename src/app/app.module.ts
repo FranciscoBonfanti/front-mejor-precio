@@ -23,7 +23,10 @@ import { AllComerciosComponent } from './layout/all-comercios/all-comercios.comp
 import { CardProdComponent } from './shared/card-prod/card-prod.component';
 import { PopupProdComponent } from './layout/popup-prod/popup-prod.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
-import { AddProductDialogComponent } from './layout/add-product-dialog/add-product-dialog.component';
+import { MapaComponent } from './pages/mapa/mapa/mapa.component';
+
+// import { BrowserModule } from '@angular/platform-browser';
+// import { GoogleMapsModule } from '@angular/google-maps';
 
 
 @NgModule({
@@ -41,7 +44,7 @@ import { AddProductDialogComponent } from './layout/add-product-dialog/add-produ
     CardProdComponent,
     PopupProdComponent,
     CarritoComponent,
-    AddProductDialogComponent    
+    MapaComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { AddProductDialogComponent } from './layout/add-product-dialog/add-produ
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule, 
-    MatDialogModule
+    MatDialogModule,
+    // BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

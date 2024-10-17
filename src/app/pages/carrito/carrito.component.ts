@@ -11,7 +11,6 @@ export class CarritoComponent {
   constructor() {}
 
   ngOnInit(): void {
-    // Cargar los items guardados en el localStorage al iniciar
     this.loadCartItems();
   }
 
@@ -23,19 +22,34 @@ export class CarritoComponent {
   }
 
   saveCartItems(): void {
-    // Guardar los items en el localStorage cada vez que se actualicen
     localStorage.setItem('cartItems', JSON.stringify(this.cartItems));
   }
 
   addToCart(item: any): void {
-    // Aquí se podría recibir un item y agregarlo al carrito
-    this.cartItems.push(item);
-    this.saveCartItems(); // Guardar en localStorage después de agregar un producto
+    const cartItem = this.cartItems.find(cartItem => cartItem.name === item.name);
+    if (cartItem) {
+      cartItem.quantity += 1;
+    } else {
+      this.cartItems.push({ ...item, quantity: 1 });
+    }
+    this.saveCartItems();
   }
 
   removeFromCart(item: any): void {
     this.cartItems = this.cartItems.filter(cartItem => cartItem !== item);
-    this.saveCartItems(); // Guardar en localStorage después de eliminar un producto
+    this.saveCartItems();
+  }
+
+  updateQuantity(item: any, quantity: number): void {
+    const cartItem = this.cartItems.find(cartItem => cartItem.name === item.name);
+    if (cartItem) {
+      cartItem.quantity = quantity;
+      if (cartItem.quantity <= 0) {
+        this.removeFromCart(cartItem);
+      } else {
+        this.saveCartItems();
+      }
+    }
   }
 
   totalPrice(): number {
@@ -43,7 +57,8 @@ export class CarritoComponent {
   }
 
   checkout(): void {
-    // Aquí iría la lógica para proceder al pago
-    // Puedes vaciar el carrito después de finalizar la compra si lo deseas.
+    alert('Compra realizada con éxito!');
+    this.cartItems = [];
+    this.saveCartItems();
   }
 }

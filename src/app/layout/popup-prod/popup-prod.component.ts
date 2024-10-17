@@ -7,22 +7,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./popup-prod.component.css']
 })
 export class PopupProdComponent {
-openAddProductDialog(arg0: any) {
-throw new Error('Method not implemented.');
-}
   @Input() product: any = null; 
   @Output() closePopup = new EventEmitter<void>(); 
   @Output() confirmPurchase = new EventEmitter<void>(); 
+
+  quantity: number = 1;
 
   constructor(private router: Router) {}
 
   onConfirmPurchase() {
     this.confirmPurchase.emit();
-    this.router.navigate(['/carrito'], { state: { product: this.product } });
+    this.router.navigate(['/carrito'], { state: { product: this.product, quantity: this.quantity } });
   }  
 
   onClosePopup() {
     this.closePopup.emit(); 
   }
-
 }

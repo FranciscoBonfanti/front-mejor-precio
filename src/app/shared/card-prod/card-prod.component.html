@@ -8,19 +8,14 @@
 
     <p class="price">Precio: {{ product.price | currency }}</p>
 
-    <p class="stock">Stock: <span [ngClass]="{'available': product.stock > 0, 'out-of-stock': product.stock === 0}">
-      {{ product.stock > 0 ? 'Disponible' : 'Agotado' }}</span>
-    </p>
+    <!-- Campo para seleccionar la cantidad -->
+    <input type="number" [(ngModel)]="product.quantity" min="1" [max]="product.stock" [value]="1" class="quantity-input">
 
     <button [disabled]="product.stock === 0" class="btn-buy" (click)="openPopup(product)">Comprar</button>
-    <button mat-button class="btn-carrito" (click)="openAddProductDialog(product)">Agregar al carrito</button>
-
   </div>
-
 </div>
 
 <app-popup-prod 
   [product]="selectedProduct" 
-  (closePopup)="closePopup()" 
-  (confirmPurchase)="confirmPurchase()">
+  (closePopup)="closePopup()">
 </app-popup-prod>
