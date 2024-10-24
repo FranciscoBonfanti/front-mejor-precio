@@ -24,7 +24,8 @@ import { CardProdComponent } from './shared/card-prod/card-prod.component';
 import { PopupProdComponent } from './layout/popup-prod/popup-prod.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { MapaComponent } from './pages/mapa/mapa/mapa.component';
-import { AgmCoreModule } from '@agm/core';
+import { GoogleMapsModule } from '@angular/google-maps';
+
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { AgmCoreModule } from '@agm/core';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule, 
-    MatDialogModule
+    MatDialogModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

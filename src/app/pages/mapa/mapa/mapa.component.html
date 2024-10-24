@@ -1,1 +1,17 @@
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+<app-nab-var></app-nab-var>
+<app-side-var></app-side-var>
+
+<google-map 
+  [width]="'800px'" 
+  [height]="'600px'" 
+  [center]="centerPosition">
+  <map-marker 
+    *ngFor="let position of positions"
+    [position]="{ lat: position.lat, lng: position.lng }"
+    [label]="{ color: label.color, text: position.text }"
+    [title]="position.text">
+  </map-marker>
+</google-map>
+
+<app-footer></app-footer>
+
