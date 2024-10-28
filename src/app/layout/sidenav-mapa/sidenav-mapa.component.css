@@ -1,0 +1,83 @@
+.sidenav-mapa-container {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+  height: 100%; 
+  padding: 20px;
+  background-color: #1d1d1d;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1d1d;
+  width: 400px; 
+  padding: 15px;
+  color: white;
+  border-right: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; 
+}
+
+.google-map {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  margin-top: 50px;
+}
+
+
+  
+  .comercios-list {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .comercios-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .comercios-list li:hover, 
+  .comercios-list li.selected {
+    background-color: #f0c040;
+    color: white;
+  }
+  
+  .comercio-info {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f0c040;
+  }
+  
+  .comercio-info h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .comercio-image {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+  }
+  
+  .comercio-info p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  li{
+    font-size: 20px;
+  }

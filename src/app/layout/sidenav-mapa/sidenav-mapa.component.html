@@ -1,0 +1,29 @@
+<div class="sidenav-mapa-container">
+  <div class="sidenav">
+    <ul class="comercios-list">
+      <li *ngFor="let comercio of comercioKeys" (click)="selectComercio(comercio)" [class.selected]="selectedComercio?.nombre === comercios[comercio].nombre">
+        {{ comercios[comercio].nombre }}
+      </li>
+    </ul>
+    
+    <div class="comercio-info" *ngIf="selectedComercio">
+      <h3>{{ selectedComercio.nombre }}</h3>
+      <img [src]="selectedComercio.imagen" alt="{{ selectedComercio.nombre }}" class="comercio-image">
+      <p>{{ selectedComercio.descripcion }}</p>
+      <p><strong>Ubicación:</strong> {{ selectedComercio.ubicacion }}</p>
+    </div>
+  </div>
+
+  <google-map 
+    class="google-map"
+    [center]="centerPosition"
+    [width]="800">
+    <map-marker 
+      *ngFor="let position of positions"
+      [position]="{ lat: position.lat, lng: position.lng }"
+      [label]="{ color: label.color, text: position.text }"
+      [title]="position.text"
+      >
+    </map-marker>
+  </google-map>
+</div>
