@@ -14,26 +14,26 @@ export class SidenavMapaComponent {
     APC: {
       nombre: 'APC',
       descripcion: 'APC es un comercio especializado en productos electrónicos y tecnología.',
-      ubicacion: 'Av. Tecnológica 123, Ciudad Tech',
-      imagen:'../../../assets/origami.png'
+      ubicacion: 'Av. Cordoba 2657, Ciudad Esperanza',
+      imagen:'../../../assets/apc-local.jpeg'
+    },
+    Menta: {
+      nombre: 'Menta Bar',
+      descripcion: 'Menta es una tienda de moda con un enfoque en ropa casual y moderna.',
+      ubicacion: 'Sarmiento 2222, Ciudad Esperanza',
+      imagen: '../../../assets/menta-local.JPG'
     },
     'Teniente Dan': {
       nombre: 'Teniente Dan',
       descripcion: 'Teniente Dan ofrece ropa militar y outdoor de alta calidad.',
-      ubicacion: 'Calle Aventura 456, Ciudad Outdoor',
-      imagen: '../../../assets/origami.png'
+      ubicacion: 'Sarmiento 2503, Ciudad Esperanza',
+      imagen: '../../../assets/teniente-local.jpg'
     },
     'Red Sport': {
       nombre: 'Red Sport',
       descripcion: 'Red Sport es un centro de ventas de artículos deportivos y ropa fitness.',
-      ubicacion: 'Blvd. Deportivo 789, Ciudad Fit',
-      imagen: '../../../assets/origami.png'
-    },
-    Menta: {
-      nombre: 'Menta',
-      descripcion: 'Menta es una tienda de moda con un enfoque en ropa casual y moderna.',
-      ubicacion: 'Plaza Central 321, Ciudad Fashion',
-      imagen: '../../../assets/origami.png'
+      ubicacion: 'Belgrano 7869, Ciudad Esperanza',
+      imagen: '../../../assets/redsport-local.jpg'
     }
   };
 

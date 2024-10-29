@@ -90,21 +90,21 @@
 }
 
 .btn-confirm {
-  background-color: #1976d2;
+  background-color: #f0c040;
   color: white;
 }
 
 .btn-cancel {
-  background-color: #f44336;
+  background-color: #1d1d1d;
   color: white;
 }
 
 .btn-confirm:hover {
-  background-color: #1565c0;
+  background-color: #b39136;
 }
 
 .btn-cancel:hover {
-  background-color: #e53935;
+  background-color: #313131;
 }
 
 /* Estilos adicionales para simular los íconos y etiquetas */

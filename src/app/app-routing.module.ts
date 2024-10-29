@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'allProducts', component: AllProductsComponent }, 
   { path: 'carrito', component: CarritoComponent },
   {path: 'mapa', component: MapaComponent},
+  {path: 'allProducts', component: AllProductsComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 

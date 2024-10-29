@@ -26,6 +26,7 @@ import { CarritoComponent } from './pages/carrito/carrito.component';
 import { MapaComponent } from './pages/mapa/mapa/mapa.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { SidenavMapaComponent } from './layout/sidenav-mapa/sidenav-mapa.component';
+import { ProductCardsComponent } from './layout/product-cards/product-cards.component';
 
 
 
@@ -45,7 +46,8 @@ import { SidenavMapaComponent } from './layout/sidenav-mapa/sidenav-mapa.compone
     PopupProdComponent,
     CarritoComponent,
     MapaComponent,
-    SidenavMapaComponent
+    SidenavMapaComponent,
+    ProductCardsComponent
   ],
   imports: [
     BrowserModule,

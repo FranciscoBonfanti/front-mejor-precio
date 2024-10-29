@@ -1,0 +1,24 @@
+<div class="product-cards-container">
+    <h3>¡Mejores ofertas!</h3>
+    
+    <!-- Botón de desplazamiento a la izquierda -->
+    <button class="scroll-button left" (click)="scrollLeft()">‹</button>
+    
+    <!-- Contenedor de productos -->
+    <div class="cards-wrapper" #scrollContainer>
+      <div class="product-card" *ngFor="let product of visibleProducts">
+        <img [src]="product.image" alt="Product Image" />
+        <div class="product-info">
+          <p class="product-name">{{ product.name }}</p>
+          <p class="original-price">{{ product.originalPrice | currency }}</p>
+          <p class="discount-price">{{ product.discountPrice | currency }} <span class="discount">{{ product.discount }} OFF</span></p>
+          <p class="installments">en 6 cuotas de {{ product.installment | currency }}</p>
+          <p *ngIf="product.freeShipping" class="free-shipping">Envío gratis</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Botón de desplazamiento a la derecha -->
+    <button class="scroll-button right" (click)="scrollRight()">›</button>
+  </div>
+  
