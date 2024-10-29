@@ -1,0 +1,22 @@
+button{
+    background-color: #1d1d1d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 15px;
+}
+
+button:hover{
+    background-color: #f0c040;
+}
+
+.mejor-cont{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-all-comercios',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./all-comercios.component.css']
 })
 export class AllComerciosComponent {
+  constructor(private router: Router) {}
 
+
+  redSport(){
+    this.router.navigate(['/redSport']);
+
+  }
 }

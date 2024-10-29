@@ -6,10 +6,13 @@
 
     <p>{{ product.description }}</p>
 
-    <p class="price">Precio: {{ product.price | currency }}</p>
+    <p class="price" class="original-price">Precio: {{ product.price | currency }}</p>
+    <p class="discount-price">{{ product.discountPrice | currency }} <span class="discount">{{ product.discount }} OFF</span></p>
+    <p class="installments">en 6 cuotas de {{ product.installment | currency }}</p>
+    <p *ngIf="product.freeShipping" class="free-shipping">Envío gratis</p>
+
 
     <!-- Campo para seleccionar la cantidad -->
-    <input type="number" [(ngModel)]="product.quantity" min="1" [max]="product.stock" [value]="1" class="quantity-input">
 
     <button [disabled]="product.stock === 0" class="btn-buy" (click)="openPopup(product)">Comprar</button>
   </div>

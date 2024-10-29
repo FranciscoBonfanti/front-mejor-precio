@@ -82,3 +82,18 @@
   li{
     font-size: 20px;
   }
+
+  button{
+    background-color: #1d1d1d;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5;
+}
+
+button:hover{
+  background-color: #f0c040;
+}

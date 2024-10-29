@@ -1,0 +1,22 @@
+<app-nab-var></app-nab-var>
+<app-side-var></app-side-var>
+
+<div class="store-profile">
+  <h2>{{ store.name }}</h2>
+  <img [src]="store.imageUrl" alt="{{ store.name }}" class="store-image">
+  <p>{{ store.description }}</p>
+  <p><strong>Ubicación:</strong> {{ store.location }}</p>
+
+  <h3>Productos Disponibles</h3>
+  <div class="product-list">
+    <div *ngFor="let product of products" class="product-card">
+      <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image">
+      <h4>{{ product.name }}</h4>
+      <p>{{ product.description }}</p>
+      <p><strong>Precio:</strong> ${{ product.price }}</p>
+      <button>Comprar</button>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

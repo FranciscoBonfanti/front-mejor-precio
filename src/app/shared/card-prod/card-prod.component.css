@@ -39,3 +39,37 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.product-name {
+  font-size: 14px;
+  color: #333;
+  margin: 8px 0;
+}
+
+.original-price {
+  font-size: 12px;
+  color: #b0b0b0;
+  text-decoration: line-through;
+}
+
+.discount-price {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.discount {
+  color: green;
+  font-size: 12px;
+}
+
+.installments {
+  font-size: 12px;
+  color: #757575;
+}
+
+.free-shipping {
+  font-size: 12px;
+  color: green;
+  margin-top: 4px;
+}

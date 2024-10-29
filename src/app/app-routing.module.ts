@@ -5,6 +5,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { AllProductsComponent } from './pages/all-products/all-products.component'; 
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { MapaComponent } from './pages/mapa/mapa/mapa.component';
+import { RedSportComponent } from './pages/red-sport/red-sport.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'carrito', component: CarritoComponent },
   {path: 'mapa', component: MapaComponent},
   {path: 'allProducts', component: AllProductsComponent},
+  {path: 'redSport', component: RedSportComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 

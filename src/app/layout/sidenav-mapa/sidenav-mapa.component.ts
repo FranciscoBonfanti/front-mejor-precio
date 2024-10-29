@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidenav-mapa.component.css']
 })
 export class SidenavMapaComponent {
+
+  constructor(private router: Router) {}
 
   selectedComercio: any = null;
 
@@ -58,6 +61,10 @@ export class SidenavMapaComponent {
 
   selectComercio(comercio: string) {
     this.selectedComercio = this.comercios[comercio];
+  }
+
+  prod(){
+    this.router.navigate(['/redSport']);
   }
 
 }

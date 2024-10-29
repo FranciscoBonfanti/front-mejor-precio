@@ -17,4 +17,11 @@ export class SideVarComponent {
     this.router.navigate(['/carrito']);
   }
 
+  rutaMapa(){
+    this.router.navigate(['/mapa']);
+
+  }
+
+  navegar(ruta: string){
+    this.router.navigate(['/'+ruta]);  }
 }

@@ -4,19 +4,20 @@
       <div class="dropdown">
         <button class="dropdown-btn">Categorías ▼</button>
         <div class="dropdown-content">
-          <a href="/allProducts">Zapatillas</a>
-          <a href="/allProducts">Alimentos</a>
-          <a href="/allProducts">Electrónica</a>
-          <a href="/allProducts">Perfumes</a>
-          <a href="/allProducts">Joyeria</a>
+          <a >Zapatillas</a>
+          <a >Alimentos</a>
+          <a >Electrónica</a>
+          <a >Perfumes</a>
+          <a >Joyeria</a>
         </div>
+        
       </div>
     </div>
     <button (click)="goToHome()" class="buttom-home">Home</button>
 
-    <a href="/allProducts">Productos</a>
+    <button (click)="navegar('allProducts')">Productos</button>
     <a href="#">Envios</a>
     <a href="/carrito">Carrito</a>
-    <a href="/mapa">Mapa</a>
+    <button (click)="rutaMapa()">Mapa</button>
   </div>
 </aside>
