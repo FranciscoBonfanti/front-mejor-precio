@@ -73,3 +73,8 @@
   color: green;
   margin-top: 4px;
 }
+
+.product-image{
+  width: 210px;
+  height: 210px;
+}

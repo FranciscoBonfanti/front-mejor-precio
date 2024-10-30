@@ -68,6 +68,12 @@ footer{
   text-decoration: underline;
 }
 
+.boton-cantidad{
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+}
+
 .cart-summary {
   display: flex;
   justify-content: space-between;
